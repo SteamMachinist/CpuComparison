@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.vsu.cs.roschupkin_ya_a.gui.CpusTableMainView">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="236"/>
+    </constraints>
+    <properties>
+      <verifyInputWhenFocusTarget value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="826ae" binding="tableScrollPane">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="81dd8" class="javax.swing.JTable" binding="cpusTable">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="dffc0" binding="panelButtons" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="empty">
+          <size top="3" left="3" bottom="3" right="10"/>
+        </border>
+        <children>
+          <component id="8602a" class="javax.swing.JButton" binding="addNewPerformanceTestButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add test"/>
+              <toolTipText value="Add new perfomance test"/>
+            </properties>
+          </component>
+          <component id="3b48a" class="javax.swing.JButton" binding="addCpuButton">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add CPU"/>
+              <toolTipText value="Add new CPU"/>
+            </properties>
+          </component>
+          <component id="e85ee" class="javax.swing.JButton" binding="removeCpuButton">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="false"/>
+              <text value="Remove CPU"/>
+              <toolTipText value="Remove selected CPU"/>
+            </properties>
+          </component>
+          <component id="e83ea" class="javax.swing.JButton" binding="displayChartButton">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Display chart"/>
+              <toolTipText value="Display cpus chart of selected value"/>
+            </properties>
+          </component>
+          <component id="57330" class="javax.swing.JComboBox" binding="chartComboBox">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <toolTipText value="Select value for chart"/>
+            </properties>
+          </component>
+          <component id="70d36" class="javax.swing.JButton" binding="removePerformanceTestButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Remove Test"/>
+              <toolTipText value="Remove selected performance test"/>
+            </properties>
+          </component>
+          <component id="5d618" class="javax.swing.JCheckBox" binding="editableCheckBox">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Editable"/>
+              <toolTipText value="Toogle table edit mode"/>
+            </properties>
+          </component>
+          <component id="3c9b1" class="javax.swing.JCheckBox" binding="uniformTestScaleCheckBox" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Uniform test scale"/>
+              <toolTipText value="Toogle same scale for performance tests"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
